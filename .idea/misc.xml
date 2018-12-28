@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="libraryTable">
+    <library name="jar_files">
+      <CLASSES>
+        <root url="file://C:/Test Automation/jar_files" />
+        <root url="file://C:/Test Automation/selenium-java-3.14.0" />
+        <root url="file://C:/Test Automation/testng-6.0.jar" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://C:/Test Automation/jar_files" />
+        <root url="file://C:/Test Automation/selenium-java-3.14.0" />
+      </SOURCES>
+      <jarDirectory url="file://C:/Test Automation/jar_files" recursive="false" />
+      <jarDirectory url="file://C:/Test Automation/selenium-java-3.14.0" recursive="false" />
+      <jarDirectory url="file://C:/Test Automation/testng-6.0.jar" recursive="false" />
+      <jarDirectory url="file://C:/Test Automation/jar_files" recursive="false" type="SOURCES" />
+      <jarDirectory url="file://C:/Test Automation/selenium-java-3.14.0" recursive="false" type="SOURCES" />
+    </library>
+  </component>
+</project>
