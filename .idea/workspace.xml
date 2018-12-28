@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c993acc9-c54a-47ea-aa3b-49390381bfbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/RajanExtent.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/RajanExtent.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,6 +16,7 @@
     <session id="1067584071">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -25,14 +25,14 @@
         <counts>
           <entry key="java" value="3807" />
           <entry key="properties" value="156" />
-          <entry key="txt" value="39" />
+          <entry key="txt" value="81" />
           <entry key="xml" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3807" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="PLAIN_TEXT" value="81" />
           <entry key="Properties" value="156" />
           <entry key="XML" value="53" />
         </counts>
@@ -42,7 +42,7 @@
           <entry key="class" value="2" />
           <entry key="fxml" value="1" />
           <entry key="gitattributes" value="1" />
-          <entry key="html" value="2" />
+          <entry key="html" value="3" />
           <entry key="java" value="30" />
           <entry key="properties" value="4" />
           <entry key="xml" value="4" />
@@ -51,7 +51,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="3" />
           <entry key="JAVA" value="30" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="4" />
@@ -83,9 +83,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitattributes">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test-output/RajanExtent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="248" column="44" selection-start-line="248" selection-start-column="44" selection-end-line="248" selection-end-column="44" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -168,7 +177,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546032611606" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546032723850" />
     <property name="last_opened_file_path" value="C:/Test Automation/Workspace/IntelliJ IDEA Community Edition 2018.2.4/xml report" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -305,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546029877473</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated workspace and rajanextent.html">
+      <created>1546032721642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1546032721642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -347,7 +363,7 @@
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.50067115" side_tool="true" weight="0.16174583" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.49932885" visible="true" weight="0.16174583" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49932885" visible="true" weight="0.16174583" />
       <window_info id="Structure" order="5" sideWeight="0.50067115" side_tool="true" weight="0.16174583" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Terminal" order="0" />
@@ -357,7 +373,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="4" weight="0.32885906" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.36510068" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.36510068" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.13825503" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -377,7 +393,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="committing vcs.xml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="committing vcs.xml file" />
+    <MESSAGE value="Updated workspace and rajanextent.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated workspace and rajanextent.html" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/crm/qa/pages/RegistrationPage.java">
@@ -504,13 +521,6 @@
         <state relative-caret-position="-13404" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/RajanExtent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/crm/qa/testcases/LoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -541,6 +551,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/RajanExtent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="248" column="44" selection-start-line="248" selection-start-column="44" selection-end-line="248" selection-end-column="44" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
