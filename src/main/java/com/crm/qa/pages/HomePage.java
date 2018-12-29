@@ -54,10 +54,8 @@ public class HomePage extends TestBase {
 
     public void clickOnNewContactLink(){
         Actions action = new Actions(driver);
-        action.moveToElement(contactsLink).build().perform();
+        action.moveToElement(contactsLink).build().perform();  // anytime we use actions class, we need to use build().perform()
         newContactLink.click();
     }
-
-
 
 }
