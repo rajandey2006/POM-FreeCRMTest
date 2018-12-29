@@ -37,18 +37,18 @@ public class ContactsPage extends TestBase {
 
 
     public void selectContactsByName(String name){
-        driver.findElement(By.xpath("//a[text()='"+name+"']//parent::td[@class='datalistrow']"
-                + "//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']")).click();
+        //driver.findElement(By.xpath("//a[text()='"+name+"']//parent::td[@class='datalistrow']"
+               // + "//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']")).click();
+        driver.findElement(By.xpath("//*[@id=\"vContactsForm\"]/table/tbody/tr[4]/td[2]/a")).click();
     }
 
 
     public void createNewContact(String title, String ftName, String ltName, String comp){
         Select select = new Select(driver.findElement(By.name("title")));
-        select.selectByVisibleText(title);
-
-        firstName.sendKeys(ftName);
-        lastName.sendKeys(ltName);
-        company.sendKeys(comp);
+        select.selectByVisibleText(title); // Select title from the drop down list - Mr. Dr. Miss Ms. Mrs. etc
+        firstName.sendKeys(ftName); // first time
+        lastName.sendKeys(ltName);  // last name
+        company.sendKeys(comp);     // company
         saveBtn.click();
 
     }
