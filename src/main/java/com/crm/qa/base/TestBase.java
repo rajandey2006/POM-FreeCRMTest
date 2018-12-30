@@ -19,10 +19,12 @@ public class TestBase {
     // Constructor of TestBase class
     // prop.load(ip) -- Assigning confirm.properties to prop -- instantiating Properties to read confirm.properties file for all the data in it
 
-    public TestBase(){
+    public TestBase() {
         try {
             prop = new Properties();
-            FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/crm"
+
+            //For windows
+            FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/crm"
                     + "/qa/config/config.properties");
             prop.load(ip);
         } catch (FileNotFoundException e) {
@@ -32,18 +34,31 @@ public class TestBase {
         }
     }
 
-
 // Setting chromedriver
     public static void initialization(){
     String browsername = prop.getProperty("browser");
+    String os = prop.getProperty("OperatingSystem");
 
-    if (browsername.equals("chrome")) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\NewtonDeploy\\chromedriver_win32\\chromedriver.exe");
-        driver = new ChromeDriver(); }
-        else if (browsername.equals("firefox")) {
-        System.setProperty("webdriver.gecko.driver", "C:\\Test Automation\\geckodriver.exe");
-        driver = new FirefoxDriver();
-    }
+    if(os.equals("Mac")) {
+
+            if (browsername.equals("chrome")) {
+                System.setProperty("webdriver.chrome.driver", "/Users/admin/IdeaProjects/POM-FreeCRMTest/Drivers/chromedriver");
+                driver = new ChromeDriver();
+            } else if (browsername.equals("firefox")) {
+                System.setProperty("webdriver.gecko.driver", "/Users/admin/IdeaProjects/POM-FreeCRMTest/Drivers/geckodriver");
+                driver = new FirefoxDriver();
+            } else if (os.equals("Windows")) {
+
+                if (browsername.equals("chrome")) {
+                    System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\NewtonDeploy\\chromedriver_win32\\chromedriver.exe");
+                    driver = new ChromeDriver();
+                } else if (browsername.equals("firefox")) {
+                    System.setProperty("webdriver.gecko.driver", "C:\\Test Automation\\geckodriver.exe");
+                    driver = new FirefoxDriver();
+                }
+            }
+        }
+
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
     driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS); //20 sec was hard coded, hence we replaced it with a variable from TestUtil
@@ -52,4 +67,5 @@ public class TestBase {
     driver.get(prop.getProperty("url"));
 
 }
+
 }
