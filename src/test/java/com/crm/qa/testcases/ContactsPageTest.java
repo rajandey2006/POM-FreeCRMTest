@@ -52,7 +52,6 @@ public class ContactsPageTest extends TestBase{
     public void selectMultipleContactsTest(){
         contactsPage.selectContactsByName("Rajan Dey");
         contactsPage.selectContactsByName("Abha Dey");
-
     }
 
     //
