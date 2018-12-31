@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class ContactsPageTest extends TestBase{
 
     LoginPage loginPage;
@@ -72,13 +74,22 @@ public Object[][] getCRMTestData(){
 // Instead of hard coding data, in data driven approach, we should use data from excel file ... to do so, we need to define DataProvide and use it ...
     // lets define @DataProvider
     @Test(priority=4,dataProvider ="getCRMTestData")
-    public void validateCreateNewContact(String Title, String FirstName, String LastName, String Company){
+    public void validateCreateNewContact(String Title, String FirstName, String LastName, String Company){ // parameters should exactly match that of test data sheet
         homePage.clickOnNewContactLink();
         //contactsPage.createNewContact("Mr.", "Ridhima", "Dey", "Wipro");
         contactsPage.createNewContact(Title,FirstName, LastName, Company );
     }
 
+@Test(priority = 5)
 
+    public void contactscreencapture(){
+    try {
+        testUtil.takeScreenshotAtEndOfTest();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+  return;
+   }
 
 
 

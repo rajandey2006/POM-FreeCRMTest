@@ -30,10 +30,11 @@ public class TestUtil extends TestBase {
     static JavascriptExecutor js;
 
 
-// Create a method with sheetname parameter
-    // FileInputStream fis = new FileInputStream(excelfilepath); --> now we have the excel file assigned to fis
-    // Workbook wbook = WorkbookFactory.create(fis) --> create workbook from WorkbookFactory
+     // Create a method with sheetname parameter
+    // FileInputStream fis = new FileInputStream(excelfilepath); --> now we have the excel testdata file
+    // Workbook wbook = WorkbookFactory.create(fis) --> create workbook from fis
     // Worksheet sheet = wbook.getSheet(sheetname)
+
     public static Object[][] getTestData(String sheetName) {
         FileInputStream fis = null;
         try {
@@ -50,10 +51,11 @@ public class TestUtil extends TestBase {
         }
         sheet = wbook.getSheet(sheetName);
 
+
+        // Now the sheet is ready without data ... we now need to create data (2 dimensional) which is type object
         Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-        // data[rownumber][columnnumber] -- > data[3][5]
-        // System.out.println(sheet.getLastRowNum() + "--------" +
-        // sheet.getRow(0).getLastCellNum());
+        // ex: data[rownumber][cellnumber] -- > data[3][5]
+        // System.out.println(sheet.getLastRowNum() + "--------" + sheet.getRow(0).getLastCellNum());
         for (int i = 0; i < sheet.getLastRowNum(); i++) {
             for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
                 data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
